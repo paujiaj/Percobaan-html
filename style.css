@@ -194,15 +194,22 @@ nav .fa{
 .nama{
     width: 80%;
     position: absolute;
-    bottom: 10px;
+    bottom: 10%;
     left: 50%;
     opacity: 0;
     transform: translate(-50%);
     font-size: 17px;
     transition: 0.5s;
 }
+.nama-btn{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-size: 17px;
+    font-weight: bold;
+}
 .single-box:hover .nama{
-    bottom: 65px;
+    bottom: 50px;
     opacity: 1;
 }
 @media(max-width: 700px){
@@ -243,8 +250,8 @@ nav .fa{
     width: 80%;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+    justify-content: space-evenly;
+    padding: 50px;
 }
 .walikelas{
     color: #fff;
@@ -254,15 +261,17 @@ nav .fa{
 }
 .walikelas h1{
     position: relative;
+    padding: 0;
 }
 .walikelas-img{
-    flex-basis: 50%;
+    text-align: center;
+    flex-basis: 300px;
     margin: auto;
     position: relative;
     right: 0;
 }
 .walikelas-img img{
-    width: 70%;
+    width: 100%;
     border-radius: 7px;
 }
 @media(max-width: 700px){

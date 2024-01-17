@@ -50,3 +50,17 @@ dibawah "dibuat oleh fauzi"
 28. SHEILVANI FITRIAN SYAH
 29. SHIFWAH MURRAN NASHIFA
 30. VITO VALIANT PRATAMA
+
+@media(max-width: 700px){
+    .content-box{
+        justify-content: center;
+    }
+    .background{
+        display: block;
+        background: rgba(0, 0, 0, 1);
+        min-height: 17vh;
+    }
+    .des-box{
+        text-align: center;
+    }
+}

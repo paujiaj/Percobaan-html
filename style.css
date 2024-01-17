@@ -247,7 +247,6 @@ nav .fa{
     padding: 50px 0;
 }
 .walikelas-box{
-    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -259,6 +258,7 @@ nav .fa{
     flex-basis: 50%;
     position: relative;
     top: 50px;
+    margin-left: 30px;
 }
 .walikelas h1{
     position: relative;

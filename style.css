@@ -252,6 +252,7 @@ nav .fa{
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
+    flex-wrap: wrap;
 }
 .walikelas{
     color: #fff;
@@ -277,6 +278,9 @@ nav .fa{
 @media(max-width: 700px){
     .walikelas{
         top: 0;
+        margin: 10px;
+        flex-basis: 100%;
+        text-align: center;
     }
     .walikelas h1{
         font-size: 25px;

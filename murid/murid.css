@@ -88,6 +88,7 @@ nav .fa{
     display: flex;
     justify-content: left;
     height: 100vh;
+    flex-wrap: wrap;
 }
 .image-box{
     margin: 20px;
@@ -116,4 +117,14 @@ nav .fa{
 .des-box p{
     position: relative;
     padding: 10px;
+}
+.background{
+    display: none;
+}
+@media(max-width: 700px){
+    .background{
+        display: block;
+        background: rgba(0, 0, 0, 1);
+        min-height: 17vh;
+    }
 }

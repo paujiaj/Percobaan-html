@@ -64,3 +64,8 @@ dibawah "dibuat oleh fauzi"
         text-align: center;
     }
 }
+
+        <a href="#X-2" class="hero-btn">X-2</a>
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit

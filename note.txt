@@ -3,17 +3,6 @@ dibawah "dibuat oleh fauzi"
         <a href="" class="hero-btn">X-2</a>
         <a href="index.html"><img src="img\logo .png"></a>
 
-.overlay{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    border-radius: 7px;
-    cursor: pointer;
-    background: rgba(4,9,30,0.7);
-    opacity: 0;
-    transition: 1s;
-}
 
 .single-box:hover .overlay{
     opacity: 1;

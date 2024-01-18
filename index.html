@@ -9,32 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
 <!-----home----->
-<section class="header">
-     <nav>
-
-        <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hidemenu()"></i>
-            <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="#X-2">X-2</a></li>
-                    <li><a href="foto.html">FOTO</a></li>
-            </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showmenu()"></i>
-    </nav>
-    
+<nav>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hidemenu()"></i>
+        <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#X-2">X-2</a></li>
+                <li><a href="foto.html">FOTO</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showmenu()"></i>
+</nav>
+<header>
     <div class="text-box">
         <img src="img/reseptwo.jpg"></a>
         <h1>X-2</h1>
         <p>Cepuwuh Dua</p>
         <!--<a href="#X-2" class="hero-btn">X-2</a>-->
     </div>
-
-</section>
+</header>
+    
 
 <!-----X-2----->
 <section id="X-2">
@@ -257,6 +256,11 @@
 
 <!----wali kelas----->
 <section id="walikelas">
+    <div class="title">
+        <div class="title-box">
+            <h1>WALI KELAS</h1>
+        </div>
+    </div>
     <div class="walikelas-box">
         <div class="walikelas">
             <h1>PAK GHOFUR</h1>
@@ -272,22 +276,27 @@
 
 <!----foto----->
 <section id="foto">
-    <div class="link-foto">
-        <a href="foto.html" class="hero-btn">FOTO-FOTO</a>
+    <div class="foto">
+        <div class="foto-box">
+            <div class="single-foto">
+                <img src="img/background.jpeg">
+            </div>
+            <div class="single-foto">
+                <img src="img/photo/MPD09456.JPG">
+            </div>
+            <div class="single-foto">
+                <img src="img/photo/WhatsApp Image 2024-01-15 at 06.43.53.jpeg">
+            </div>
+            <div class="link-foto">
+                <a href="foto.html" class="hero-btn">MORE</a>
+            </div>
+        </div>
     </div>
+    <div class="popup-foto">
+        <span>&times;</span>
+        <img src="img/background.jpeg">
+    </div>
+
 </section>
-
-<!-----Script For Menu----->
-    <script>
-
-        var navLinks = document.getElementById("navLinks");
-        function showmenu(){
-            navLinks.style.right = "0px";
-        }
-        function hidemenu(){
-            navLinks.style.right = "-700px";
-        }
-
-    </script>
 </body>
 </html>

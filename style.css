@@ -106,8 +106,8 @@ nav {
     
 }
 .hero-btn:hover{
-    border: 1px solid rgb(212, 173, 252);
-    background: rgb(212, 173, 252);
+    border: 1px solid #FF894C;
+    background: #FF894C;
     transition: 1s;
 
 }
@@ -189,10 +189,14 @@ nav .fi{
     padding: 70px 0;
     background: #f4f4f4;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
 }
 .title-text{
     text-align: center;
     color: #000000;
+    width: 100%;
 }
 .title-text h1{
     font-size: 50px;
@@ -207,15 +211,19 @@ nav .fi{
     justify-content: space-around;
     margin: auto;
     padding: 20px 0;
+    align-items: center;
+    margin: 50px 0;
 }
 .single-box{
-    flex-basis: 8%;
+
     text-align: center;
     border-radius: 7px;
     color: #fff;
     position: relative;
     margin: 1%;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    width: 125px;
+    height: 125px;
 }
 .nama::after{
     content: '';
@@ -278,8 +286,9 @@ nav .fi{
         height: 100%;
     }
     .single-box{
-        flex-basis: 78%;
         margin-bottom: 30px;
+        width: 350px;
+        height: 350px;
     }
     .nama-btn{
         font-size: 30px;
@@ -460,7 +469,7 @@ nav .fi{
     }
 }
 .credit-box{
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     background: #ffffff;
     p{

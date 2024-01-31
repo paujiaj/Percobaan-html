@@ -137,13 +137,25 @@ nav .fa{
 }
 .des-box-p{
     position: relative;
-    margin: 20px 40px;
+    margin: 40px 80px;
     text-align: left;
     flex-grow: 1;
+    font-size: 20px;
+    letter-spacing: 2px;
+    ul li{
+        margin: 3px;
+    }
 }
 .des-box-p2{
     position: relative;
-    padding: 10px;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+.med-link{
+    flex-shrink: 1;
+    .med-link-box img{
+        width: 75px;
+    }
 }
 .background{
     display: none;

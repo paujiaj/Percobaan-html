@@ -3,6 +3,49 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+body{
+    .theme-btn{
+        display: none;
+    }
+}
+.dark-mode{
+    nav{
+        background: #28282B;
+        .nav-links ul li a{
+             color: #fff;
+        }
+        .nav-links ul li .fu{
+            color: #fff;
+        }
+    }
+    @media(max-width: 700px){
+        nav{
+            &.active{
+                .fa{
+                    color: #fff;
+                }
+                .fi{
+                    color: #fff;
+                }
+            }
+        }
+        .nav-links{
+            background: #28282B;
+        }
+        .fi{
+            color: #fff;
+        }
+        .nav-links ul li a{
+            color: #fff;
+        }
+    }
+    .header{
+        background: #1a1a1c;
+    }
+    .des-box{
+        color: #fff;
+    }
+}
 .header {
     min-height: 100vh;
     width: 100%;

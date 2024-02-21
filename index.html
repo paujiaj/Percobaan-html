@@ -8,20 +8,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="theme.js" defer></script>
     <script src="main.js" defer></script>
     <title>CEPUWUH DUA</title>
 </head>
 <body>
+    <input type="checkbox" class="theme-btn" id="darkmode-toggle"/>
 <!-----home----->
 <nav>
     <div class="nav-links" id="navLinks">
         <i class="fi fa fa-times" onclick="hidemenu()"></i>
         <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="#X-2">X-2</a></li>
-                <li><a href="foto.html">FOTO</a></li>
-
+                <li><a class="navb" href="">HOME</a></li>
+                <li><a class="navb" href="about.html">ABOUT</a></li>
+                <li><a class="navb" href="#X-2">X-2</a></li>
+                <li><a class="navb" href="foto.html">FOTO</a></li>
+                <li><a href="Theme.html"><i class="fu fa fa-cog"></i></a></li>
         </ul>
     </div>
     <i class="fa fa-bars" onclick="showmenu()"></i>
@@ -31,7 +33,7 @@
         <img src="img/reseptwo.jpg"></a>
         <h1>X-2</h1>
         <p>Part of SMA Labschool UPI</p>
-        <!--<a href="#X-2" class="hero-btn">X-2</a>-->
+        <button onclick="ToggleTheme()" class="hero-btn">Dark Mode</button>
     </div>
 </header>
     

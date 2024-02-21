@@ -37,3 +37,28 @@ function showmenu(){
 function hidemenu(){
     navLinks.style.right = "-700px";
 }
+
+
+function ToggleTheme() {
+    var SetTheme = document.body;
+    SetTheme.classList.toggle("dark-mode");
+    var theme;
+
+    if(SetTheme.classList.contains("dark-mode")){
+        console.log("Dark Mode");
+        theme = "DARK";
+    }else{
+        console.log("Light Mode");
+        theme = "LIGHT";
+    }
+
+    localStorage.setItem("PageTheme", JSON.stringify(theme));
+ }
+
+ let GetTheme = JSON.parse(localStorage.getItem("PageTheme"));
+ console.log(GetTheme)
+
+ if(GetTheme === "DARK"){
+    document.body.classList = "dark-mode";
+ }
+console.log(darkModeEnabled);

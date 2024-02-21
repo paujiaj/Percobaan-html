@@ -5,6 +5,66 @@
 }
 body{
     overflow: overlay;
+    .theme-btn{
+        display: none;
+    }
+}
+.dark-mode{
+    nav{
+        &.active{
+            background: #28282B;
+            .nav-links ul li a{
+                color: #fff;
+            }
+            .nav-links ul li .fu{
+                color: #fff;
+            }
+        }
+    }
+    @media(max-width: 700px){
+        nav{
+            &.active{
+                .fa{
+                    color: #fff;
+                }
+                .fi{
+                    color: #fff;
+                }
+            }
+        }
+        .nav-links{
+            background: #28282B;
+        }
+        .fi{
+            color: #fff;
+        }
+        .nav-links ul li a{
+            color: #fff;
+        }
+    }
+    /*-----X-2-----*/
+    #X-2{
+        background: #1a1a1c;
+    }
+    .title-text{
+        color: #fff;
+    }
+
+    /*-----walikelas-----*/
+    #walikelas{
+        background: #151517;
+    }
+    .title{
+        color: #fff;
+    }
+    .walikelas{
+        color: #fff;
+        background: #1a1a1c;
+    }
+
+    #foto{
+        background: #1a1a1c;
+    }
 }
 body::-webkit-scrollbar{
     width: 15px;
@@ -39,6 +99,11 @@ nav {
             color: #000000;
             transition: 0.2s;
         }
+        .nav-links ul li{
+            .fu{
+                color: #000000;
+            }
+        }
     }
     .nav-links {
         flex: 1;
@@ -50,6 +115,10 @@ nav {
         display: inline-block;
         padding: 5px 10px;
         position: relative;
+        .fu{
+            display: block;
+            color: #fff;
+        }
     }
     .nav-links ul li a{
         color: #ffffff;
@@ -57,7 +126,7 @@ nav {
         font-size: 17px;
     
     }
-    .nav-links ul li::after{
+    .nav-links ul li .navb::after{
         content: '';
         width: 0%;
         height: 2px;
@@ -66,7 +135,7 @@ nav {
         margin: auto;
         transition: 0.5s;
     }
-    .nav-links ul li:hover::after{
+    .nav-links ul li .navb:hover::after{
         width: 100%;
     }
 }
@@ -264,7 +333,7 @@ nav .fi{
     width: 80%;
     font-size: 17px;
     position: absolute;
-    top: 150%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, 0%);
     opacity: 0;
@@ -339,7 +408,7 @@ nav .fi{
 }
 .walikelas{
     color: #000000;
-    background: #393e461a;
+    background: #fff;
     position: relative;
     flex-basis: 500px;
     padding: 30px;
@@ -378,7 +447,7 @@ nav .fi{
         top: 0;
         text-align: center;
         border-radius: 7px 7px 0 0;
-        flex-basis: 300px;
+        flex-basis: 240px;
     }
     .walikelas-box{
         margin: 0;

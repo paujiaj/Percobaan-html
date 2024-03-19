@@ -20,14 +20,12 @@ body{
     }
     @media(max-width: 700px){
         nav{
-            &.active{
-                .fa{
-                    color: #fff;
-                }
-                .fi{
-                    color: #fff;
-                }
-            }
+        .fa{
+            color: #fff;
+        }
+        .fi{
+            color: #fff;
+        }
         }
         .nav-links{
             background: #28282B;
@@ -37,6 +35,9 @@ body{
         }
         .nav-links ul li a{
             color: #fff;
+        }
+        .des-box{
+            background: #1a1a1c;
         }
     }
     .header{
@@ -74,6 +75,10 @@ nav {
         display: inline-block;
         padding: 5px 10px;
         position: relative;
+        .fu{
+            display: block;
+            color: #000;
+        }
     }
     .nav-links ul li a{
         color: #000;
@@ -152,17 +157,47 @@ nav .fa{
     flex-wrap: wrap;
     align-items: center;
 }
-.image-box{
+.image-container{
+    position: relative;
     width: 500px;
     align-items: center;
     overflow: hidden;
     height: 100%;
     box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3);
 }
+.image-box{
+    display: flex;
+    overflow-x: auto;
+    aspect-ratio: 2 / 5;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
 .image-box img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
     height: 100vh;
     object-fit: cover;
     width: 100%;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    a{
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 75%;
+        transition: opacity ease 250ms;
+    }
+    a:hover{
+        opacity: 1;
+    }
 }
 .des-box{
     position: relative;

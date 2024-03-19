@@ -1,1 +1,53 @@
                 <li><a href="project.html">PROJECT</a></li>
+                nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    transition: 0.3s;
+    background: #fff;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+    .nav-links {
+        flex: 1;
+        text-align: right;
+        margin: 10px;
+    }
+    .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 5px 10px;
+        position: relative;
+    }
+    .nav-links ul li a{
+        color: #000;
+        text-decoration: none;
+        font-size: 17px;
+    
+    }
+    .nav-links ul li::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background:#FF894C;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+        width: 100%;
+    }
+}
+nav .fa{
+    display: none;
+    padding: 10% 10%;
+}
+
+
+M. Aulia Ghofur, S.Pd., atau dikenal dengan panggilan "Pak Ghofur", adalah wali kelas untuk kelas X-2 di 
+                    SMA Labschool UPI Cibiru. Selain menjadi wali kelas, Pak Ghofur merupakan guru mata pelajaran Informatika 
+                    dan guru seni media visual. 
+                    <br> <br> Pak Ghofur dikenal sebagai seorang guru yang santai dan perhatian terhadap murid-muridnya. 
+                    Beliau sering berinteraksi dengan siswa-siswi bila memiliki waktu luang, yang membuat mereka lebih senang
+                     untuk belajar dengannya.

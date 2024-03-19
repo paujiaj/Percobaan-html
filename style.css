@@ -388,12 +388,14 @@ nav .fi{
 /*-----walikelas-----*/
 #walikelas{
     background: #ffffff;
-    padding: 30px 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .title{
     position: relative;
     text-align: center;
+    margin: 20px;
     .title-box{
         padding: 20px;
         font-size: 30px;
@@ -402,15 +404,13 @@ nav .fi{
 .walikelas-box{
     display: flex;
     justify-content: center;
-    padding: 50px 100px;
-    flex-wrap: wrap;
+    padding: 0px 100px;
     margin: auto;
 }
 .walikelas{
     color: #000000;
     background: #fff;
     position: relative;
-    flex-basis: 500px;
     padding: 30px;
     border-radius: 7px 0 0 7px;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
@@ -452,6 +452,7 @@ nav .fi{
     .walikelas-box{
         margin: 0;
         padding: 20px;
+        flex-wrap: wrap;
     }
     .walikelas h1{
         font-size: 25px;
